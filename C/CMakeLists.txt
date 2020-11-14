@@ -7,7 +7,6 @@ include_directories(${CMAKE_SOURCE_DIR}/A)
 include_directories(${CMAKE_SOURCE_DIR}/B)
 include_directories(${CMAKE_SOURCE_DIR}/googletest/googletest/include)
 
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 add_executable(C main.cpp)
 target_link_libraries(C lib)
 add_dependencies(C IndexGenerator)
