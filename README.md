@@ -71,5 +71,6 @@ make
 make install
 
 Для Decorator нужен еще gnutls, gsasl и sendmail:
+
 sudo apt install doxygen gnutls-bin libgnutls28-dev gsasl libghc-gsasl-dev php-mail sendmail
 
