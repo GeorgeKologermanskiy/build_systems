@@ -38,13 +38,11 @@
 
 Подтягиваем submodules:
 
-git submodule init && git submodule update
+git submodule update --init --recursive
 
 Для сборки нужен любой C++ компилятор. Ставим boost:
 
 cd boost
-
-git submodule init && git submodule update
 
 ./bootstrap.sh --prefix=path/to/installation/prefix e.g. /usr/local/boost
 
@@ -55,8 +53,6 @@ git submodule init && git submodule update
 Для сборки нужен любой C++ компилятор и perl. Ставим openssl:
 
 cd openssl
-
-git submodule init && git submodule update
 
 ./Configure.sh --prefix=path/to/installation/prefix e.g. /usr/local/openssl
 
@@ -74,4 +70,6 @@ make
 
 make install
 
-Для Decorator нужен еще gnutls и gsasl. Их не получилось подтянуть. Без декоратора все собирается.
+Для Decorator нужен еще gnutls, gsasl и sendmail:
+sudo apt install doxygen gnutls-bin libgnutls28-dev gsasl libghc-gsasl-dev php-mail sendmail
+

@@ -71,7 +71,7 @@ add_subdirectory(Visitor/cpp-source)
 if(NOT ON_PI)
 	add_subdirectory(Adapter/cpp-source)
 	add_subdirectory(Composite/cpp-source)
-	#add_subdirectory(Decorator/cpp-source)
+	add_subdirectory(Decorator/cpp-source)
 endif()
 add_subdirectory(Facade/cpp-source)
 
